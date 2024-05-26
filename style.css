@@ -31,6 +31,7 @@ header > h1 {
 }
 
 header > div {
+    cursor: pointer;
     display: flex;
     gap: 16px;
     align-items: center;
@@ -45,6 +46,7 @@ header > div > p {
     color: #4B6A9B;
 }
 
+
 form {
     width: 87%;
     margin-top: 36px;
@@ -58,6 +60,7 @@ form {
 }
 
 form > button {
+    cursor: pointer;
     width: 84px;
     height: 46px;
     background-color: #0079FF;
@@ -81,10 +84,11 @@ form > div > input {
     width: 184px;
     border: none;
     font-family: Space Mono;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    color: #4B6A9B;
+    color: #222731;
+    outline: none;
 }
 
 .card-box {
@@ -192,9 +196,39 @@ form > div > input {
 }
 
 .socialmedia-box > div > p{
+    cursor: pointer;
     font-family: Space Mono;
     font-size: 13px;
     font-weight: 400;
     line-height: 19.25px;
     color: #4B6A9B;   
+}
+
+
+form > div > input::placeholder{
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color:  #4B6A9B;
+}
+
+form > button:hover {
+    transition: 0.5s;
+    background-color: #60ABFF;
+}
+
+.socialmedia-box > div > p:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+header > div:hover p{
+    transition: 1s;
+    color: #222731;
+}
+
+
+header > div:hover img.path{
+    fill: #222731;
 }
