@@ -1,0 +1,179 @@
+@media (width >= 750px) {
+    body {
+        padding: 140px 0 240px 0;
+    }
+
+    header {
+        width: 74.6%;
+    }
+
+    form {
+        width: 74.6%;
+        padding: 9.5px 10px 9.5px 32px;
+    }
+
+    form > button {
+        width: 106px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 23.7px;
+    }
+
+    form > div {
+        gap: 24px;
+    }
+
+    form > div > input {
+        width: 300px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .card-box {
+        width: 74.6%;
+        padding: 40px 40px 40px 40px;
+    }
+
+    .card-header {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card-header > img {
+        width: 117px;
+        height: 117px;
+    }
+
+    .username-box > div > p {
+        font-size: 26px;
+        line-height: 38.51px;   
+    }
+
+    .username-box > div > a {
+        font-size: 16px;
+        line-height: 23.7px;
+    }
+
+    .username-box > p {
+        font-size: 15px;
+        line-height: 22.22px;
+    }
+
+    .text-container > p {
+        font-size: 15px;
+        line-height: 25px
+    }
+
+    .followers-box {
+        padding: 15px 0 17px 32px;
+        justify-content: flex-start;
+        gap: 90px;
+    }
+
+    .followers-box > div {
+        align-items: flex-start;
+    }
+
+    .followers-box > div > h6 {
+        font-size: 13px;
+        line-height: 19.25px;
+    }
+
+    .followers-box > div > p {
+        font-size: 22px;
+        line-height: 32.58px;
+    }
+
+    .socialmedia-box {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .tweeter{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .socialmedia-box > div > p {
+        font-size: 15px;
+        line-height: 22.22px;
+    }
+}
+
+
+@media (width >= 1024px) {
+    body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    header {
+        width: 730px;
+    }
+
+    form {
+        width: 730px;
+        padding-top: 23px;
+        padding-bottom: 22px;
+        margin-top: 36px;
+    }
+
+    .card-box {
+        width: 730px;
+        padding: 44px 48px 52px 48px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+    }
+
+    .img-375 {
+        display: none;
+    }
+
+    .img-1024 {
+        width: 117px;
+        height: 117px;
+    }
+
+    .username-box {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .username-box > p {
+        position: relative;
+        top: 10px;
+    }
+
+    .text-container > p {
+        margin-top: 20px;
+    }
+
+    .followers-box{
+        padding-top: 15px;
+        padding-bottom: 17px;
+        gap: 100px;
+        margin-top: 32px;
+    }
+
+    .socialmedia-box {
+        margin-top: 40px;
+        
+    }
+}
+
+
+
+
+@media (width < 1024px) {
+    .img-1024 {
+        display: none;
+    }
+}

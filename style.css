@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F6F8FF;
+    padding: 31px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1 {
+    font-family: Space Mono;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38.51px;
+    color: #222731;
+}
+
+header > div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+header > div > p {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.25px;
+    letter-spacing: 2.5px;
+    color: #4B6A9B;
+}
+
+form {
+    width: 87%;
+    margin-top: 36px;
+    padding: 6.5px 7px 7.5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 16px 30px -10px #4660BB33;
+}
+
+form > button {
+    width: 84px;
+    height: 46px;
+    background-color: #0079FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.73px;
+
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form > div > input {
+    width: 184px;
+    border: none;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #4B6A9B;
+}
+
+.card-box {
+    width: 87%;
+    padding: 32px 24px 48px 24px;
+    background-color: white;
+    margin-top: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 30px -10px #4660BB33;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    gap: 20px;
+}
+
+.username-box{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.username-box > div > p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    color: #2B3442;
+}
+
+.username-box > div > a {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    color: #0079FF;
+    text-decoration: none;
+}
+
+.username-box > p {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    color: #697C9A;
+}
+
+.text-container > p {
+    margin-top: 33px;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #4B6A9B;
+}
+
+.followers-box {
+    margin-top: 23px;
+    padding: 18px 25px 19px 25px;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.followers-box > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.followers-box > div > h6 {
+    font-family: Space Mono;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.29px;
+    color: #4B6A9B;
+}
+
+.followers-box > div > p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    color: #2B3442;
+}
+
+.socialmedia-box {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 16px;
+}
+
+.socialmedia-box > div {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.socialmedia-box > div > p{
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    color: #4B6A9B;   
+}
