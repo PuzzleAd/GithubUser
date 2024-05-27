@@ -246,21 +246,12 @@ form > div > input::placeholder{
     text-decoration: underline;
 }
 
-header > div:hover p{
+header > div:hover p, header > div:hover #iconPath{
     transition: 1s;
     color: #222731;
-}
-
-
-header > div:hover img.path{
     fill: #222731;
 }
 
-
-
-.after750 {
-    display: none; 
-}
 
 .not-Found-none {
     display: none;
