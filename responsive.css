@@ -12,11 +12,16 @@
         padding: 9.5px 10px 9.5px 32px;
     }
 
-    form > button {
+    #button-box > button {
         width: 106px;
         height: 50px;
         font-size: 16px;
         line-height: 23.7px;
+    }
+
+    #not-Found {
+        top: 15px;
+        left: -120px;
     }
 
     form > div {
@@ -24,7 +29,7 @@
     }
 
     form > div > input {
-        width: 300px;
+        width: 290px;
         font-size: 18px;
         line-height: 25px;
     }
@@ -123,7 +128,7 @@
     }
 
     form > div > input {
-        width: 500px;
+        width: 400px;
         height: 50px;
     }
 
