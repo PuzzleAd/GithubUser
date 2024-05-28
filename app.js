@@ -19,6 +19,7 @@ form.addEventListener("submit", function (event) {
     fetch(url, {method: "GET"})
     .then((response) => response.json())
     .then((data) => {
+        console.log(data)
 
         const notFound = document.getElementById("not-Found");
 
@@ -58,7 +59,7 @@ function getUsername (user, nick, date) {
         "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
       ];
     
-    let monthIndex = date.slice(5, 7);
+    let monthIndex = date.slice(5, 7) - 1;
     if(monthIndex[0] === "0") {
         monthIndex = monthIndex.slice(1);
     }
