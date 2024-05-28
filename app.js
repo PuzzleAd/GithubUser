@@ -171,7 +171,6 @@ function textWhiten() {
 
     })
 
-    console.log(whiteText)
 }
 
 function backgroundDarker () {
@@ -205,6 +204,5 @@ function  removeClasses() {
         element.classList.remove("whiteColor");
     })
 
-    console.log(whiteText)
 }
 
