@@ -261,3 +261,32 @@ header > div:hover p, header > div:hover #iconPath{
     display: block;
 }
 
+.img-1024, .img-375 {
+    border-radius: 70px;
+}
+#sun {
+    display: none;
+}
+
+
+.darkColor {
+    background-color: #141D2F;
+}
+
+.darkerColor {
+    background-color: #1E2A47;
+}
+
+.darkestColor {
+    background-color: #141D2F;
+}
+
+#dark-light:hover .sun, #dark-light:hover  .whiteColor {
+    fill: #90A4D4;
+    color: #90A4D4 !important;
+    transition: 0.5s;
+}
+
+.whiteColor{
+    color: #FFFFFF !important;
+}

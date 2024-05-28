@@ -108,3 +108,103 @@ function locLinkTweetCompany (loc, link, tweet, com) {
     const company = document.getElementById("company-p");
     com === null ? company.textContent = "Not Available" : company.textContent = com;
 }
+
+
+const modeButton = document.getElementById("dark-light");
+
+darkOrLightStart();
+
+
+modeButton.addEventListener("click", function () {
+    darkOrLight();
+})
+
+function darkOrLightStart() {
+    const moon = document.getElementById("moon");
+    const sun = document.getElementById("sun");
+    const darkLightText = document.getElementById("dark-white");
+    
+    if(localStorage.getItem("mode") === "light") {
+        textWhiten();
+        backgroundDarker();
+        darkLightText.textContent = "LIGHT";
+        moon.style.display = "none";
+        sun.style.display = "block";
+    }else{
+        removeClasses();
+        darkLightText.textContent = "DARK";
+        moon.style.display = "block";
+        sun.style.display = "none";
+    }
+}
+
+
+function darkOrLight () {
+
+    const moon = document.getElementById("moon");
+    const sun = document.getElementById("sun");
+    const darkLightText = document.getElementById("dark-white");
+    
+    if(localStorage.getItem("mode") === "dark") {
+        textWhiten();
+        backgroundDarker();
+        darkLightText.textContent = "LIGHT";
+        moon.style.display = "none";
+        sun.style.display = "block";
+        localStorage.setItem("mode", "light")
+    }else{
+        removeClasses();
+        darkLightText.textContent = "DARK";
+        moon.style.display = "block";
+        sun.style.display = "none";
+        localStorage.setItem("mode", "dark");
+    }
+}
+
+
+function textWhiten() {
+    const whiteText = Array.from(document.querySelectorAll(".white-color"));
+
+
+    whiteText.forEach(function (element) {
+        element.classList.add("whiteColor");
+
+    })
+
+    console.log(whiteText)
+}
+
+function backgroundDarker () {
+    const bodyDarkBackground = document.querySelector(".dark-blue-color");
+    bodyDarkBackground.classList.add("darkColor");
+
+    const boxDarkBackground = Array.from(document.querySelectorAll(".darker-blue-color"));
+
+    boxDarkBackground.forEach(function (element) {
+        element.classList.add("darkerColor");
+    })
+
+    const follDarkBackground = document.querySelector(".darkest-blue-color");
+    follDarkBackground.classList.add("darkestColor");
+
+}
+
+
+function  removeClasses() {
+    const bodyDarkBackground = document.querySelector(".dark-blue-color");
+    const boxDarkBackground = Array.from(document.querySelectorAll(".darker-blue-color"));
+    const follDarkBackground = document.querySelector(".darkest-blue-color");
+    const whiteText = Array.from(document.querySelectorAll(".white-color"));
+
+    bodyDarkBackground.classList.remove("darkColor");
+    boxDarkBackground.forEach(function (element) {
+        element.classList.remove("darkerColor");
+    })
+    follDarkBackground.classList.remove("darkestColor");
+    whiteText.forEach(function (element) {
+        element.classList.remove("whiteColor");
+    })
+
+    console.log(whiteText)
+}
+
